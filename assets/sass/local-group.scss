@@ -1,0 +1,472 @@
+@media screen {
+    .u-pageHome {
+        .u-lHeader {
+            background-image: url();
+            padding: 0;
+            position: relative;
+        }
+        .galleria {
+            padding-bottom: 13em;
+            z-index: 1
+        }
+        .galleria-container {
+            overflow: visible
+        }
+        .galleria--content {
+            margin: 0;
+            margin: 0;
+        }
+        .galleria-info {
+            bottom: 0;
+            top: auto;
+            left: 0;
+            width: 100%;
+            right: auto
+        }
+        .galleria-info-text {
+            background-color: rgba(0,0,0,.85);
+            padding: 0 12px 12px 12px;
+            position: absolute;
+            display: block;
+            width: 100%
+        }
+        .galleria-info-title {
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            display: inline-block;
+            font-family: acumin-pro-extra-condensed, "Arial Narrow", "Helvetica Condensed";
+            font-weight: 200;
+            font-size: 3rem;
+            line-height: 1;
+            margin-bottom: 0px;
+            padding-top: 0px;
+        }
+        .galleria-info-description {
+            font: inherit;
+            color: #fff;
+        }
+        .u-Masthead {
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            min-height:inherit;
+            max-width:inherit;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            z-index: 10;
+            visibility: hidden;
+        }
+    }
+}
+@media screen and (min-width: 37.5em) {
+    .u-pageHome {
+        .galleria {
+            padding-bottom: 0;
+        }
+        .galleria-info {
+            width: 70%;
+            top: inherit;
+            bottom: 0;
+            left: 5%;
+        }
+        .galleria-info-text {
+            position: relative;
+        }
+        .galleria-info-title {
+            font-size: 4rem;
+        }
+    }
+    .u-Masthead__head {
+        font-size: 4rem;
+    }
+}
+@media screen and (max-width: 37.5em) {
+    .u-pageHome {
+        #g-navigation .u-NavSite--global, 
+        #g-navigation .u-NavSite__main, 
+        #navigation .u-NavSite--global, 
+        #navigation .u-NavSite__main {
+            z-index: 1;
+        }
+        .g-Masthead__vassar {
+            z-index: 2;
+        }
+    }
+}
+.u-folderMentors .u-lHeader {
+    background-image: url(../images/slides2-crop-0002-20-01-kr-scc-networking-vassar-0051.jpg);
+}
+.u-folderSchedules .u-lHeader {
+    background-image: url(../images/slides2-crop-0001-20-01-kr-scc-levison-vassar-0068.jpg);
+    background-position: center bottom;
+}
+.u-folderSpeakers .u-lHeader {
+    background-image: url(../images/slides2-crop-0002-20-01-kr-scc-maldonado-vassar-0053.jpg);
+}
+.students-home-page-section {
+    background: #000 url(../images/slides2-crop-0001-20-01-kr-scc-levison-vassar-0068.jpg) no-repeat center center;
+    background-size: cover;
+    .Row {
+        padding: 4%;
+        background-color: rgba(0,0,0,.8);
+    }
+}
+.u-Masthead__head {
+    font-size: 3rem;
+}
+.row-no-max-width {
+    padding: 0 0 2em;
+    .Row {
+        max-width: none;
+    }
+}
+.row-no-max-width.speakers {
+    padding: 2em;
+}
+.u-folderSpeakers {
+    .u-pageTitle {
+        b {
+            display: block;
+            font-size: .5em;
+            font-style: italic;
+        }
+    }
+}
+.speakers {
+    .Row {
+        width: 95%;
+    }
+    .Row--col2 {
+        grid-column-gap: 2%;
+    }
+    h2 {
+        font-size: 1em;
+    }
+    h3 {
+        font-size: .9em;
+    }
+    .Module--halfWidth {
+        padding: 2em;
+        margin-bottom: 1em;
+        position: relative;
+        &:after {
+            content: "";
+            top: 0;
+            left: 0;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            transform: skewX(3deg);
+            border: #951829 1px solid;
+            z-index: 1;
+        }
+    }
+    p {
+        font-size: .8em;
+    }
+}
+.speakers.speaker {
+    background-color: #fff;
+    .figure--image {
+        width: 33%;
+        float: left;
+        margin: 0 1em 1em 0;
+    }
+}
+.keynote {
+    padding: 3em;
+    margin-bottom: 2em;
+    background-color: #e6ded2;
+    .Row {
+        padding: 2em 2em 1em 2em;
+        background-color: #fff;
+    }
+    .Row__title {
+        text-align: center;
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        color: #951829;
+        position: relative;
+        z-index: 2;
+        margin-bottom: 0;
+    }
+    p {
+        font-size: .8em;
+    }
+    h3 {
+        font-size: 1em;
+    }
+    h4 {
+        font-size: .9em;
+        font-weight: 600;
+    }
+    .shape-content {
+        padding: 1em 0 0;
+    }
+}
+.center {
+    text-align: center;
+    h2 {
+        margin-top: 2em;
+    }
+}
+/* Reg button */
+.button {
+    margin-top: 0 !important;
+    -webkit-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+    &:link {
+        background: #951829;
+        font-size: 1.4em;
+        display: inline-block;
+        padding: 0.4em 0.6em;
+        border-radius: 0.4em;
+        border: none; 
+        width: 100%;
+        text-align: center;
+    }
+    &:link, &:visited {
+        color: #fff !important;
+    }
+    &:link:hover,
+    &:visited:hover {
+        background: #000; 
+    }
+}
+.intro-graphs {
+    .image {
+        width: 33%;
+        float: right;
+        margin: 0 0 1em 1em;
+        img {
+            border: 1px solid;
+            margin-bottom: 0;
+        }
+        figcaption {
+            font-size: 90%;
+            font-style:  italic;
+        }
+        a[href$=".pdf"]:after {
+            content: "";
+        }
+    }   
+}
+/* schedules */
+.u-folderSchedules {
+    table {
+        td  {
+            display: block;
+        }
+    }
+}
+@media screen and (min-width: 40.6em) {
+    .u-folderSchedules {
+        table {
+            td {
+                display: table-cell;
+            }
+            tr td:first-child {
+                width: 25%;
+            }
+        }
+    }
+}
+/* Mentors */
+.show {
+  display: block;
+}
+.button-grid button {
+  border: 1px solid #fff;
+  padding: 0.8em;
+}
+.alum {
+    overflow: hidden;
+    margin-bottom: 1em;
+    .title {
+        font-style: italic;
+    }
+    h3 {
+        margin-top: 0;
+        display: inline;
+    }
+    .title {
+        display: inline-block;
+        padding-left: 1em;
+    }
+    img {
+        width: 100%;
+    }
+    .summary {
+        font-size: 0.9em;
+    }
+    details {
+        ul {
+            list-style: none;
+        }
+        li {
+            font-size: .9em;
+            margin-bottom: .25em;
+        }
+    }
+}
+.mentors {
+    .Row {
+        max-width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    h4 {
+        grid-area: colHeader;
+        margin-bottom: 1em;
+    }
+    .all-buttons {
+        grid-area: col1;
+        font-size: .9em;
+    }
+    .container {
+        grid-area: col2;
+        margin-top: .25em;
+        background-color: #f1f1f1;
+        padding: 1em;
+        border: 1px solid #bfb9b0;
+        font-size: .9em;
+        &:after {
+            content: "Mentors";
+            font-weight: 600;
+            text-transform: uppercase;
+            display: block;
+            text-align: center;
+            font-size: 2em;
+        }
+        .title {
+            margin-bottom: .25em;
+        }
+    }
+}
+@media screen and (min-width: 37.5em) {
+    .alum {
+        img {
+            width: 30%;
+            float: left;
+            margin: 0 .25em .25em 0; 
+        }
+    }
+    .shape-content {
+        z-index: 2;
+        position: relative;
+        padding: 1em 1em 0;
+        display: flex;
+        justify-content: space-between;
+        .text {
+            width: 60%;
+        }
+    }
+    .speakers {
+        .figure--image {
+            width: 36%;
+        }
+        .Module--halfWidth {
+            padding: 1em;
+        }
+    }
+}
+.hide {
+  display: none;
+}
+.button-grid {
+    padding: 0;
+    li {
+        list-style: none;
+    }
+    input {
+        position: absolute;
+        opacity: 0;
+        cursor: pointer;
+        height: 0;
+        width: 0;
+    }
+    .checkbox-style {
+        display: block;
+        padding: 0.1em 0.6em;
+    }
+    input:checked ~ .checkbox-style {
+        background: #222;
+        color: #fff;
+    }
+}
+.filterDiv {
+    display: none;
+}
+.visible {
+    display: block;
+}
+.dontShowMentors:after {
+    content: none !important;
+}
+summary {
+    background-color: transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    padding: 0.2em 0.6em; 
+}
+details {
+    border: 1px solid #BFB9B0;
+    border-radius: 0.3em;
+    margin: 0.16em 0;
+    &:first-of-type {
+        margin: 0.18em 0; 
+    }
+    &:hover {
+        cursor: pointer;
+        background: #f8f7f6;
+        border-color: #746661; 
+    }
+}
+details[open] {
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 0.4em;
+    padding-bottom: 0.6em;
+    &:hover {
+        cursor: default;
+        background: #fff;
+        border-color: #BFB9B0; 
+    }
+    summary {
+        background: #861f41;
+        border-top-left-radius: 0.3em;
+        border-top-right-radius: 0.3em;
+        color: #fff;
+        margin: -1px -1px 0 -1px;
+        margin-bottom: 0.6em;
+        &:hover {
+            background: #c1b5b0;
+            cursor: pointer; 
+        }
+    }
+}
+@media screen and (min-width: 40.6em) {
+    .mentors .Row {
+        align-items: stretch;
+        display: grid;
+        grid-column-gap: 2%;
+        grid-row-gap: 0;
+        grid-template-areas:"colHeader colHeader" "col1 col2";
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto;
+        justify-items: stretch;
+    }
+}
+.caption-header {
+    font-size: .85em;
+}
+.u-Video {
+    margin-top: 1em;
+}
+.keynote .Row {
+    text-align: center;
+}
+.speaker p {
+    font-size: inherit;
+}
